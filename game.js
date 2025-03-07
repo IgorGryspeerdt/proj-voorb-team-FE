@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${game.image}" class="game-image" alt="${game.name}">
                 <h1 class="game-title">${game.name}</h1>
                 <p class="game-description">${game.shortDescription}</p>
-                <p class="game-description">${game.fullDescription}</p>
+                <p class="game-full-description">${game.fullDescription}</p>
                 <p class="game-price">€${game.price.toFixed(2)}</p>
                 <a href="games.html" class="back-link">← Terug naar de game lijst</a>
             `;
