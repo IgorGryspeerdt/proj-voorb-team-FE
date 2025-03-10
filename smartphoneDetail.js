@@ -20,12 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         const details = document.getElementById("smartphone-details");
         details.innerHTML = `
             <h2>${smartphone.name}</h2>
-            <p>Omschrijving: ${smartphone.description}</p>
-            <p>Prijs: ${smartphone.price}</p>
             <p>Merk: ${smartphone.brand}</p>
-            <p>Model: ${smartphone.model}</p>
             <p>Release Jaar: ${smartphone.releaseYear}</p>
             <p>Features: ${smartphone.features.join(", ")}</p>
+            <p>Prijs: ${smartphone.price}€</p>
         `;
     } catch (error) {
         console.error("Fout bij ophalen van smartphone:", error);
